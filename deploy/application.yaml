@@ -2,6 +2,7 @@ apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
   name: echo-server
+  namespace: sample-app
 spec:
   components:
     - name: echo-server
