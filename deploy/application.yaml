@@ -1,0 +1,38 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: echo-server
+spec:
+  components:
+    - name: echo-server
+      type: webservice
+      properties:
+        image: ealen/echo-server
+        port: 80
+      # traits:
+      #   - type: ingress
+      #     properties:
+      #       domain: echoserver.xpto.com.br
+      #       http:
+      #         '/': 80
+    # AWS resources
+    # - name: my-awesome-table
+    #   type: dynamodb
+    #   properties:
+    #     resourceName: my-awesome-table
+    #     attributes:
+    #       - name: myKey
+    #         type: S
+    #     keys:
+    #       - name: myKey
+    #         type: HASH
+    # - name: another-awesome-table
+    #   type: dynamodb
+    #   properties:
+    #     resourceName: another-awesome-table
+    #     attributes:
+    #       - name: myKey
+    #         type: S
+    #     keys:
+    #       - name: myKey
+    #         type: HASH
