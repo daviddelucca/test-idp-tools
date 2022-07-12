@@ -17,16 +17,16 @@ spec:
       #       http:
       #         '/': 80
     # AWS resources
-    # - name: my-awesome-table
-    #   type: dynamodb
-    #   properties:
-    #     resourceName: my-awesome-table
-    #     attributes:
-    #       - name: myKey
-    #         type: S
-    #     keys:
-    #       - name: myKey
-    #         type: HASH
+    - name: my-awesome-table
+      type: dynamodb
+      properties:
+        resourceName: my-awesome-table
+        attributes:
+          - name: myKey
+            type: S
+        keys:
+          - name: myKey
+            type: HASH
     # - name: another-awesome-table
     #   type: dynamodb
     #   properties:
