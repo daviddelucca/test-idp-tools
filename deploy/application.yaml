@@ -1,8 +1,8 @@
 apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
-  name: echo-server
-  namespace: sample-app
+  name: echo-server-new
+  namespace: argocd
 spec:
   components:
     - name: echo-server
